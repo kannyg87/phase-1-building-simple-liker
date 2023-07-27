@@ -3,8 +3,15 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
-
-
+const like = document.querySelector(".like-glyph")
+like.addEventListener("click", function(){
+  const isFull = like.innerHTML === FULL_HEART;
+  if (isFull){
+    like.innerHTML = EMPTY_HEART
+  } else {
+    like.innerHTML = FULL_HEART
+  }
+})
 
 
 //------------------------------------------------------------------------------
